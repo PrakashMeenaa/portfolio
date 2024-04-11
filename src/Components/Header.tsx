@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { FaArrowRight, FaChevronRight } from "react-icons/fa";
 
@@ -17,10 +18,10 @@ const Header = () => {
     };
   }, []);
   return (
-    <div className={`flex ${!scrolled ? "justify-between absolute " : "justify-center fixed"} top-0 w-screen items-center px-3 uppercase text-primary py-2`}>
+    <div className={`flex ${!scrolled ? "justify-between absolute " : "justify-center fixed"} top-0 w-screen items-center px-3 uppercase text-primary py-2 z-50`}>
       {!scrolled && (
         <div className="flex items-center cursor-pointer ">
-          <img src="/PMLOGO.png" alt="" className="h-[52px] w-[52px] object-cover object-center " />
+          <Image src="/PMLOGO.png" alt=""  height="52" width="52" className="object-cover object-center " style={{height:'52px'}}/>
           <p className=" font-medium"> Prakash Meena</p>
         </div>
       )}
