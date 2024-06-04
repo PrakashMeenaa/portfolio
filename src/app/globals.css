@@ -5,6 +5,11 @@
 html {
   background-color: black;
 }
+::-webkit-scrollbar {
+  width: 0; 
+  background: transparent;  
+}
+
 
 .buttons {
   padding: 10px 24px;
@@ -35,5 +40,184 @@ html {
   --tw-shadow-color: white/10;
   --tw-shadow: var(--tw-shadow-colored);
 }
+#magic-cursor {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  pointer-events: none;
+  z-index: 10;
+}
 
-/* <button className='buttons group'>Contact <span className='hidden group-hover:flex'><FaArrowRight /></span><span className='group-hover:hidden'><FaChevronRight /></span></button>  */
+#ball {
+  position: fixed;
+  display: block;
+  left: 0;
+  top: 0;
+  transform: translate(-50%, -50%);
+  width: 25px;
+  height: 25px;
+  border: 2px solid #bd00ff;
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 1;
+  background-color: #bd00ff;
+}
+
+.icon-wrap {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.button-icon {
+  height: 30px;
+  width: 30px;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  font-size: 24px;
+}
+
+.button-text {
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 60px;
+  overflow: hidden;
+  width: 140px;
+  color: #fff;
+  text-align: left;
+  cursor: pointer;
+}
+
+.button-text span {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.2s;
+  width: 140px;
+}
+
+.button-text span::before {
+  position: absolute;
+  width: 140px;
+  top: 100%;
+  left: 0;
+  content: attr(data-hover);
+  transform: translate3d(0, 0, 0);
+}
+
+.button-wrap:hover .button-text span {
+  transform: translateY(-100%);
+}
+@keyframes border-spin {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.card-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  background-color: rgba(67, 67, 67, 0.538);
+}
+
+.card-wrapper::before {
+  position: absolute;
+  left: -25%;
+  top: -25%;
+  height: 150%;
+  width: 150%;
+  content: '';
+  background: conic-gradient(rgb(255, 255, 255) 0deg, rgb(255, 255, 255) 0deg, transparent 50deg);
+  animation: border-spin 10s linear infinite; 
+}
+
+.card-content {
+  position: absolute;
+  left: 2.5px;
+  top: 2.5px;
+  height: calc(100% - 5px);
+  width: calc(100% - 5px);
+  border-radius: 1rem;
+}
+.swiper-pagination-bullets .swiper-pagination-bullet {
+  background-color: black;
+}
+.swiper {
+  height: 100%;
+}
+.parallax-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 130%;
+  height: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+.headings2 div h1{
+  font-size: 6vw;
+    font-weight: 700;
+    text-transform:uppercase ;
+}
+
+.headings2 img{
+  position: absolute;
+  height: 20vw;
+  width: 25%;
+  z-index: 100;
+  opacity: 0;
+  object-fit: cover;
+  object-position: top;
+  transform-origin: center;
+  pointer-events: none;
+  visibility: hidden;
+  transform: translate(-50%,-50%)
+
+}
+.headingelem{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10vw;
+  margin-left: 3vw;
+  padding: 2vw 3vw ;
+  opacity: 1;
+  align-items: center;
+  padding-right: 0px;
+  -webkit-transition: color 0.3s; /* Adjust duration as needed */
+  transition: color 0.3s; /* Adjust duration as needed */
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.headingelem:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background:  #bd00ff;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition: transform 0.6s ; 
+  transition: transform 0.6s ; 
+}
+
+.headingelem:hover:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}

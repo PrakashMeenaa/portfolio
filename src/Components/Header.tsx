@@ -18,7 +18,7 @@ const Header = () => {
     };
   }, []);
   return (
-    <div className={`flex ${!scrolled ? "justify-between absolute " : "justify-center fixed"} top-0 w-screen items-center px-3 uppercase text-primary py-2 z-50`}>
+    <div className={`flex ${!scrolled ? "justify-between absolute " : "justify-center fixed"} top-0 w-screen items-center px-3 uppercase text-primary py-2 z-[10]`}>
       {!scrolled && (
         <div className="flex items-center cursor-pointer ">
           <Image src="/PMLOGO.png" alt=""  height="52" width="52" className="object-cover object-center " style={{height:'52px'}}/>
