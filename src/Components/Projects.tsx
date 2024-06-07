@@ -5,9 +5,9 @@ import Link from "next/link";
 import React, { useEffect } from "react";
 
 const projects = [
-  { name: "Architect", img: "1" },
-  { name: "Food Ordering", img: "2" },
-  { name: "Chemical export", img: "3" },
+  { name: "Oan Industries", img: "3" },
+  { name: "CHAAR DIWARI STUDIO", img: "1" },
+  { name: "Food Ordering App", img: "2" },
 ];
 
 function Projects() {
@@ -45,13 +45,13 @@ function Projects() {
   }, []);
   const project = [1, 2, 3];
   return (
-    <div className="relative w-screen h-screen">
-      <div className=" absolute -z-[1] h-full my-20 w-full  ">
-        <Spline scene="https://draft.spline.design/iCDZgPebt34k2kr5/scene.splinecode" />
+    <div className="relative w-screen min-h-screen max-h-max">
+      <div className=" -z-[1] h-screen  w-screen  ">
+        <Spline scene="https://prod.spline.design/hvPByE-mtY4Ijy1R/scene.splinecode" />
       </div>
-      <div className="text-primary absolute lg:grid-cols-3 gap-5 py-24  px-3 sm:px-16 md:px-32 justify-around items-center">
+      <div className="text-primary absolute top-0 lg:grid-cols-3 gap-5 my-24  mx-3 sm:mx-16 md:mx-32 justify-around items-center">
         <div className="text-[8vw] md:text-[5vw] uppercase font-semibold ">Projects</div>
-        <div className=" py-24 tracking-widest flex flex-col gap-10">
+        <div className=" py-10 tracking-widest flex flex-col gap-10">
           <div className="headings2 ">
             {projects.map((p, index) => {
               return (

@@ -14,7 +14,7 @@ export default function Home() {
       <Socials/>
       <motion.div className="snap-start relative text-primary w-screen h-screen"  >
         <div className=" -z-10 h-full w-full absolute ">
-          <Spline scene="https://draft.spline.design/6OtMhuIveVYXbwmd/scene.splinecode" />
+          <Spline scene="https://prod.spline.design/jz0hYr7XhPzsaQF7/scene.splinecode" />
         </div>
         <motion.div initial={{ x: -1000 }} animate={{ x: 0 }} drag dragConstraints={{left:-100, right:100,top:-100,bottom:100}}  dragTransition={{bounceDamping:10}} className="ml-10 md:ml-48 mt-56  uppercase text-xl md:text-4xl w-max flex flex-col gap-3 absolute ">
           <p className="">hey! I am </p>
