@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { FaArrowRight, FaChevronRight } from "react-icons/fa";
 
@@ -20,23 +21,27 @@ const Header = () => {
   return (
     <div className={`flex ${!scrolled ? "justify-between absolute " : "justify-center fixed"} top-0 w-screen items-center px-3 uppercase text-primary py-2 z-[10]`}>
       {!scrolled && (
-        <div className="flex items-center cursor-pointer ">
-          <Image src="/PMLOGO.png" alt=""  height="52" width="52" className="object-cover object-center " style={{height:'52px'}}/>
-          <p className=" font-medium"> Prakash Meena</p>
-        </div>
+        <Link href={"/"}>
+          <div className="flex items-center cursor-pointer ">
+            <Image src="/PMLOGO.png" alt="" height="52" width="52" className="object-cover object-center " style={{ height: "52px" }} />
+            <p className=" font-medium"> Prakash Meena</p>
+          </div>
+        </Link>
       )}
       <div className="hidden lg:flex rounded-full border-[1px] border-primary p-1 items-center backdrop-blur-sm bg-[white/30]">
         <ul className="flex  justify-between  ">
-          <li className="border-opacity-0 hover:border-opacity-100 border-[1px] border-primary rounded-full  cursor-pointer py-2 px-4">About</li>
-          <li className="border-opacity-0 hover:border-opacity-100 border-[1px] border-primary rounded-full  cursor-pointer py-2 px-4">experience</li>
-          <li className="border-opacity-0 hover:border-opacity-100 border-[1px] border-primary rounded-full  cursor-pointer py-2 px-4">skills</li>
-          <li className="border-opacity-0 hover:border-opacity-100 border-[1px] border-primary rounded-full  cursor-pointer py-2 px-4">projects</li>
-          <li className={`${!scrolled ? "hidden" : "block"} border-opacity-0 hover:border-opacity-100 border-[1px] border-primary rounded-full  cursor-pointer py-2 px-4 `}>Contact</li>
+          <li className="border-opacity-0 hover:border-opacity-100 border-[1px] border-primary rounded-full  cursor-pointer py-2 px-4">
+            <Link href="/#projects">Projects</Link>
+          </li>
+          <li className="border-opacity-0 hover:border-opacity-100 border-[1px] border-primary rounded-full  cursor-pointer py-2 px-4">
+            <Link href="/#about">About</Link>
+          </li>
+          <li className={`${!scrolled ? "hidden" : "block"} border-opacity-0 hover:border-opacity-100 border-[1px] border-primary rounded-full  cursor-pointer py-2 px-4 `}><Link href="/#contact">Contact</Link></li>
         </ul>
       </div>
       {!scrolled && (
-        <div>
-          <button className="buttons group">
+        <Link href="/#contact">
+          <button className="buttons group" name="contact">
             Contact{" "}
             <span className="hidden group-hover:flex">
               <FaArrowRight />
@@ -45,7 +50,7 @@ const Header = () => {
               <FaChevronRight />
             </span>
           </button>
-        </div>
+        </Link>
       )}
     </div>
   );

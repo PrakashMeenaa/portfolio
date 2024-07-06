@@ -45,11 +45,11 @@ function Projects() {
   }, []);
   const project = [1, 2, 3];
   return (
-    <div className="relative w-screen min-h-screen max-h-max">
-      <div className=" -z-[1] h-screen  w-screen  ">
+    <div id="projects" className="relative w-screen my-24 md:min-h-screen max-h-max">
+      <div className=" -z-[1]    ">
         <Spline scene="https://prod.spline.design/hvPByE-mtY4Ijy1R/scene.splinecode" />
       </div>
-      <div className="text-primary absolute top-0 lg:grid-cols-3 gap-5 my-24  mx-3 sm:mx-16 md:mx-32 justify-around items-center">
+      <div className="text-primary absolute top-0 lg:grid-cols-3 gap-5   mx-3 sm:mx-16 md:mx-32 justify-around items-center">
         <div className="text-[8vw] md:text-[5vw] uppercase font-semibold ">Projects</div>
         <div className=" py-10 tracking-widest flex flex-col gap-10">
           <div className="headings2 ">
@@ -58,7 +58,7 @@ function Projects() {
                 <div key={index}>
                   <hr />
                   <div className="headingelem">
-                    <Link href={`plasticizers/${p.name.toLowerCase().replace(/\s+/g, "")}`}>
+                    <Link href={`/${p.name.toLowerCase().replace(/\s+/g, "")}`}>
                       <h1>{p.name}</h1>
                       <Image src={`/project${p.img}/desktop.png`} alt={p.name} width="0" height="0" sizes="100vw" className="images"></Image>
                     </Link>

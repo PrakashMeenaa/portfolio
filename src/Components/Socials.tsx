@@ -75,42 +75,42 @@ const Socials = () => {
       <div className="flex justify-center items-center">
         <div className="icon-wrap">
           <div className="button-icon">
-            <Link href={"/"}>
-              <button className="social-button">CV</button>
-            </Link>
+          <a href="/Resume/Prakash Meena Resume Frontend Developer.pdf" download="Prakash Meena Resume Frontend Developer.pdf" aria-label="CV download">
+              <button className="buttons2" name="CV">CV</button>
+            </a>
           </div>
         </div>
       </div>
       <div className="flex justify-center items-center">
         <div className="icon-wrap">
           <div className="button-icon">
-            <Link href={"/"}>
-              <button className="buttons2">
+            <a href='mailto:meenaprak12@gmail.com' aria-label="Emailnp">
+              <button className="buttons2 " name="email">
                 <MdOutlineEmail className="text-2xl" />
               </button>
-            </Link>
+            </a>
           </div>
         </div>
       </div>
       <div className="flex justify-center items-center">
         <div className="icon-wrap">
           <div className="button-icon">
-            <Link href={"/"}>
-              <button className="buttons2">
+            <a href={"https://www.linkedin.com/in/praakashhh"} target="_blank" aria-label="linkedin">
+              <button className="buttons2" name="linkedin">
                 <FaLinkedin className="text-2xl" />
               </button>
-            </Link>
+            </a>
           </div>
         </div>
       </div>
       <div className="flex justify-center items-center">
         <div className="icon-wrap">
           <div className="button-icon">
-            <Link href={"/"}>
-              <button className="buttons2">
+            <a href={"https://github.com/PrakashMeenaa"} target="_blank" aria-label="Github">
+              <button className="buttons2"  name="Github">
                 <IoLogoGithub className="text-2xl" />
               </button>
-            </Link>
+            </a>
           </div>
         </div>
       </div>

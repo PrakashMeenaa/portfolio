@@ -12,5 +12,10 @@ const config: Config = {
     },
   },
   plugins: [],
+  variants: {
+    extend: {
+      scrollBehavior: ['responsive'],
+    },
+  },
 };
 export default config;

@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Header from "@/Components/Header";
+import Socials from "@/Components/Socials";
+import Circle from "@/Components/Circle";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -16,10 +18,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body className={montserrat.className}>
       <Header/>
+       <Socials/>
       {children}
+      <Circle/>
       </body>
     </html>
   );
