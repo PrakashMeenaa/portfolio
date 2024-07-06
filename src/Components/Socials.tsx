@@ -1,5 +1,4 @@
 "use client";
-import Link from "next/link";
 import React, { useEffect } from "react";
 import { MdOutlineEmail } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
@@ -76,7 +75,7 @@ const Socials = () => {
         <div className="icon-wrap">
           <div className="button-icon">
           <a href="/Resume/Prakash Meena Resume Frontend Developer.pdf" download="Prakash Meena Resume Frontend Developer.pdf" aria-label="CV download">
-              <button className="buttons2" name="CV">CV</button>
+              <button className="buttons2" aria-label="CV">CV</button>
             </a>
           </div>
         </div>
@@ -85,7 +84,7 @@ const Socials = () => {
         <div className="icon-wrap">
           <div className="button-icon">
             <a href='mailto:meenaprak12@gmail.com' aria-label="Emailnp">
-              <button className="buttons2 " name="email">
+              <button className="buttons2 " aria-label="email">
                 <MdOutlineEmail className="text-2xl" />
               </button>
             </a>
@@ -96,7 +95,7 @@ const Socials = () => {
         <div className="icon-wrap">
           <div className="button-icon">
             <a href={"https://www.linkedin.com/in/praakashhh"} target="_blank" aria-label="linkedin">
-              <button className="buttons2" name="linkedin">
+              <button className="buttons2" aria-label="linkedin">
                 <FaLinkedin className="text-2xl" />
               </button>
             </a>
@@ -107,7 +106,7 @@ const Socials = () => {
         <div className="icon-wrap">
           <div className="button-icon">
             <a href={"https://github.com/PrakashMeenaa"} target="_blank" aria-label="Github">
-              <button className="buttons2"  name="Github">
+              <button className="buttons2"  aria-label="Github">
                 <IoLogoGithub className="text-2xl" />
               </button>
             </a>

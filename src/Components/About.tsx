@@ -37,10 +37,13 @@ const About = () => {
               <p className='text-2xl'>Full Stack Developer with 5 years of experience, specializing in front-end development. Adept at creating seamless, user-friendly web applications with a keen eye for detail and visually compelling designs.</p>
           </div>
           <div className='bentobox items-center group' >
-            <Image src="/profile.jpeg" alt="photo" width="0" height="0" sizes="100vw" className=" h-[400px] w-[400px] filter grayscale group-hover:filter-none"></Image>
-            <p>Hi,</p>
+            <div className='h-[325px] w-[325px]'>
+
+            <Image src="/profile.webp" alt="photo" width="0" height="0" sizes="100vw" className=" h-[325px] w-[325px] filter grayscale group-hover:filter-none"></Image>
+            </div>
+            <p>Hi &#128075;,</p>
             <p> I am Prakash Meena</p>
-            <p>grab my mail and get in touch</p>
+            <p>grab my <a href="mailto:meenaprak12@gmail.com" target="_blank" aria-label="email" className='underline underline-offset-4'>email</a> to get in touch!!</p>
           </div>
           <div className='bentobox group '>
             <h1>experience</h1>

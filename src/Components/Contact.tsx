@@ -1,10 +1,5 @@
 import React, { useEffect } from "react";
-import {
-  useMotionTemplate,
-  useMotionValue,
-  motion,
-  animate,
-} from "framer-motion";
+import {useMotionTemplate, useMotionValue, motion,animate,} from "framer-motion";
 import { IoLogoGithub, IoLogoInstagram } from "react-icons/io";
 import { FaLinkedin } from "react-icons/fa";
 
@@ -47,7 +42,8 @@ export const Contact = () => {
         <p className="my-6 max-w-xl text-center text-base leading-relaxed md:text-lg md:leading-relaxed">
           Connect On Socials
         </p>
-        <div className="flex gap-2">
+        <div className="flex">
+          <a href={"https://github.com/PrakashMeenaa"} target="_blank" className="p-6" aria-label="Github">
         <motion.button
           style={{
             border,
@@ -59,13 +55,13 @@ export const Contact = () => {
           whileTap={{
             scale: 0.985,
           }}
-          className=" flex w-fit items-center gap-1.5 rounded-full bg-gray-950/10 p-2 text-gray-50 transition-colors hover:bg-gray-950/50"
-          name="Github"
+          className=" flex  items-center gap-1.5 rounded-full w-16 h-16 justify-center bg-gray-950/10 text-gray-50 transition-colors hover:bg-gray-950/50"
+          aria-label="Github"
         >
-          <a href={"https://github.com/PrakashMeenaa"} target="_blank" className="h-6 w-6" aria-label="Github">
                 <IoLogoGithub className="text-2xl" />
-            </a>
         </motion.button>
+            </a>
+        <a href={"https://www.linkedin.com/in/praakashhh"} target="_blank" className="p-6"  aria-label="linkedin">
         <motion.button
           style={{
             border,
@@ -77,14 +73,14 @@ export const Contact = () => {
           whileTap={{
             scale: 0.985,
           }}
-          className=" flex w-fit items-center gap-1.5 rounded-full bg-gray-950/10 p-2 text-gray-50 transition-colors hover:bg-gray-950/50"
-          name="linkedin"
+          className=" flex w-16 h-16 justify-center items-center gap-1.5 rounded-full bg-gray-950/10  text-gray-50 transition-colors hover:bg-gray-950/50"
+          aria-label="linkedin"
         >
-          <a href={"https://www.linkedin.com/in/praakashhh"} target="_blank" className="h-6 w-6" aria-label="linkedin">
                 
               <FaLinkedin className="text-2xl" />
-            </a>
         </motion.button>
+            </a>
+        <a href={"https://www.instagram.com/praakashhh"} target="_blank" className="p-6" aria-label="Instagram">
         <motion.button
           style={{
             border,
@@ -96,13 +92,11 @@ export const Contact = () => {
           whileTap={{
             scale: 0.985,
           }}
-          className=" flex w-fit items-center gap-1.5 rounded-full bg-gray-950/10 p-2 text-gray-50 transition-colors hover:bg-gray-950/50"
-          name="Instagram"
-        >
-          <a href={"https://www.instagram.com/praakashhh"} target="_blank" className="h-6 w-6" aria-label="Instagram">
-                <IoLogoInstagram className="text-2xl" />
-            </a>
+          className=" flex w-16 h-16 justify-center items-center gap-1.5 rounded-full bg-gray-950/10  text-gray-50 transition-colors hover:bg-gray-950/50"
+          aria-label="Instagram">
+          <IoLogoInstagram className="text-2xl" />
         </motion.button>
+            </a>
         </div>
       </div>
     </motion.section>

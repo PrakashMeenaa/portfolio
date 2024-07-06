@@ -3,9 +3,14 @@
 import About from "@/Components/About";
 import { Contact } from "@/Components/Contact";
 import Projects from "@/Components/Projects";
-import Spline from "@splinetool/react-spline";
+import dynamic from 'next/dynamic';
 import { motion } from "framer-motion";
 import { useEffect } from "react";
+
+const Spline = dynamic(() => import('@splinetool/react-spline'), {
+  ssr: false,
+  loading: () => <p>...</p>,
+}); 
 
 export default function Home() {
   useEffect(() => {
@@ -20,8 +25,8 @@ export default function Home() {
 
   return (
     <div className="relative">
-      <motion.div className="snap-start relative text-primary w-screen h-screen">
-        <div className=" -z-10 h-full w-full absolute ">
+      <div className="snap-start relative text-primary w-screen h-screen">
+        <div className=" -z-10 h-full w-full absolute">
           <Spline scene="https://prod.spline.design/jz0hYr7XhPzsaQF7/scene.splinecode" />
         </div>
         <motion.div
@@ -38,7 +43,7 @@ export default function Home() {
           <p> crafting beautiful</p>
           <p>digital experiences.</p>
         </motion.div>
-      </motion.div>
+      </div>
       <Projects />
       <About />
       <Contact/>

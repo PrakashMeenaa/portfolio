@@ -13,10 +13,10 @@ const page = () => {
       <div className=" h-max  w-screen flex flex-col gap-3 items-center my-[1.5rem] ">
         <div className="flex items-center  bg-[#9d9d9d] w-max xl:scale-[150%] rounded-full   bg-opacity-65 p-1 ">
           <div className="flex ">
-            <Link href={"/foodorderingapp"}>
+            <Link href={"/foodorderingapp"} aria-label="back">
               <IoIosArrowBack className=" m-1 p-1 text-3xl rounded-full  bg-[#898989]" />
             </Link>
-            <Link href={"/chaardiwaristudio"}>
+            <Link href={"/chaardiwaristudio"} aria-label="next">
               <IoIosArrowForward className="m-1 p-1 text-3xl rounded-full  bg-[#888888]" />
             </Link>
           </div>
@@ -27,7 +27,7 @@ const page = () => {
             VISIT
           </a>
           <div className="bg-[#9d9d9d] rounded-full m-1 p-2 ">
-            <Link href={"/"}>
+            <Link href={"/"} aria-label="backtohomepage">
               <RiCloseLargeLine className="" />
             </Link>
           </div>

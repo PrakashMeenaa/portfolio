@@ -23,7 +23,7 @@ const Header = () => {
       {!scrolled && (
         <Link href={"/"}>
           <div className="flex items-center cursor-pointer ">
-            <Image src="/PMLOGO.png" alt="" height="52" width="52" className="object-cover object-center " style={{ height: "52px" }} />
+            <Image src="/PMLOGO.webp" alt="" height="52" width="52" className="object-cover object-center " loading="lazy" style={{ height: "52px" }} />
             <p className=" font-medium"> Prakash Meena</p>
           </div>
         </Link>
@@ -41,7 +41,7 @@ const Header = () => {
       </div>
       {!scrolled && (
         <Link href="/#contact">
-          <button className="buttons group" name="contact">
+          <button className="buttons group" aria-label="contact">
             Contact{" "}
             <span className="hidden group-hover:flex">
               <FaArrowRight />

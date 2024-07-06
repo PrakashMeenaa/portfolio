@@ -1,8 +1,12 @@
-import Spline from "@splinetool/react-spline";
+import dynamic from 'next/dynamic';
 import gsap from "gsap";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect } from "react";
+const Spline = dynamic(() => import('@splinetool/react-spline'), {
+  ssr: false,
+  loading: () => <p>...</p>,
+}); 
 
 const projects = [
   { name: "Oan Industries", img: "3" },
@@ -60,7 +64,7 @@ function Projects() {
                   <div className="headingelem">
                     <Link href={`/${p.name.toLowerCase().replace(/\s+/g, "")}`}>
                       <h1>{p.name}</h1>
-                      <Image src={`/project${p.img}/desktop.png`} alt={p.name} width="0" height="0" sizes="100vw" className="images"></Image>
+                      <Image src={`/${p.name.toLowerCase().replace(/\s+/g, "")}/desktop.webp`} alt={p.name} width="0" height="0" sizes="100vw" className="images"></Image>
                     </Link>
                   </div>
                   <hr />

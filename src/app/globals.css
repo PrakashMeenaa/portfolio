@@ -151,22 +151,6 @@ html {
   width: calc(100% - 5px);
   border-radius: 1rem;
 }
-.swiper-pagination-bullets .swiper-pagination-bullet {
-  background-color: black;
-}
-.swiper {
-  height: 100%;
-}
-.parallax-bg {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 130%;
-  height: 100%;
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: center;
-}
 .headings2 div h1 {
   font-size: 5vw;
   font-weight: 700;
