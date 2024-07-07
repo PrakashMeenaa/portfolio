@@ -6,11 +6,11 @@ import { RiCloseLargeLine } from "react-icons/ri";
 
 const page = () => {
   return (
-    <div className="text-primary bg-gradient-to-b from-second to-[#eae7dd] flex flex-col lg:flex-row h-max justify-around items-center mt-10 p-10">
-      <div className="screen my-[1.5rem]" >
-        <Image src="/oanindustries/desktop.webp" alt="" className="xl:bottom-[-1880px]" />
+    <div className="text-primary bg-gradient-to-b from-second to-[#796a63] flex flex-col lg:flex-row h-max justify-around items-center  px-10 pt-16">
+      <div className="screen my-[1.5rem] ">
+        <Image src="/oanindustries/desktop.webp"alt="" width="0" height="0" sizes="100vw" className="w-full h-max xl:bottom-[-1880px]" />
       </div>
-      <div className=" h-max  w-screen flex flex-col gap-3 items-center my-[1.5rem] ">
+      <div className=" h-max  w-screen flex flex-col gap-3 items-center mt-[1.5rem] ">
         <div className="flex items-center  bg-[#9d9d9d] w-max xl:scale-[150%] rounded-full   bg-opacity-65 p-1 ">
           <div className="flex ">
             <Link href={"/foodorderingapp"} aria-label="back">
@@ -34,12 +34,12 @@ const page = () => {
         </div>
         <div className="bg-opacity-5 bg-primary shadow-lg scale-[90%] p-7 flex flex-col rounded-2xl gap-3">
           <div className="max-w-4xl mx-auto p-4 text-white">
-            <h1 className="text-5xl font-bold mb-4 text-center uppercase text-[#fffae6]">OAN Industries</h1>
+            <h1 className="text-2xl md:text-5xl font-bold mb-4 text-center uppercase text-[#fffae6]">OAN Industries</h1>
             <hr className="border-gray-400 my-4" />
 
             <div className="overflow-y-auto max-h-[550px]">
               <section className="mb-8">
-                <h2 className="text-3xl font-semibold mb-4 text-[#d3bda5]">Overview</h2>
+                <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-[#d3bda5]">Overview</h2>
                 <p className="text-gray-300">
                   As the developer responsible for the OAN Industries website, I have meticulously designed a visually captivating digital platform that seamlessly integrates advanced animations and modern design principles. This project showcases OAN Industries&apos; commitment to delivering a dynamic
                   online experience that resonates with its audience.
@@ -47,10 +47,10 @@ const page = () => {
               </section>
 
               <section className="mb-8">
-                <h2 className="text-3xl font-semibold mb-4 text-[#d3bda5]">Important Pages</h2>
+                <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-[#d3bda5]">Important Pages</h2>
 
                 <div className="mb-6">
-                  <h3 className="text-2xl font-semibold mb-2 text-[#e8d3b8]">Home Page</h3>
+                  <h3 className="text-xl md:text-2xl font-semibold mb-2 text-[#e8d3b8]">Home Page</h3>
                   <p className="text-gray-300">The home page prominently features OAN Industries&apos; key projects, client testimonials, and the brand&apos;s design philosophy.</p>
                   <p className="text-gray-300">
                     <strong>Technologies:</strong> Developed using Next.js for optimized performance and React for dynamic user interfaces. Enhanced with GSAP for smooth animations.
@@ -58,7 +58,7 @@ const page = () => {
                 </div>
 
                 <div className="mb-6">
-                  <h3 className="text-2xl font-semibold mb-2 text-[#e8d3b8]">Product Catalog</h3>
+                  <h3 className="text-xl md:text-2xl font-semibold mb-2 text-[#e8d3b8]">Product Catalog</h3>
                   <p className="text-gray-300">The product catalog showcases a wide range of offerings with detailed descriptions and interactive elements to engage visitors.</p>
                   <p className="text-gray-300">
                     <strong>Technologies:</strong> Utilized React for frontend interactivity and GSAP for animations.
@@ -69,7 +69,7 @@ const page = () => {
                 </div>
 
                 <div className="mb-6">
-                  <h3 className="text-2xl font-semibold mb-2 text-[#e8d3b8]">Careers Page</h3>
+                  <h3 className="text-xl md:text-2xl font-semibold mb-2 text-[#e8d3b8]">Careers Page</h3>
                   <p className="text-gray-300">
                     The careers page at OAN Industries is designed to attract top talent by showcasing available job opportunities, company culture, and employee benefits. It features a user-friendly interface that allows potential candidates to easily browse open positions and apply directly
                     through the website.
@@ -83,7 +83,7 @@ const page = () => {
                 </div>
 
                 <div className="mb-6">
-                  <h3 className="text-2xl font-semibold mb-2 text-[#e8d3b8]">Contact Page</h3>
+                  <h3 className="text-xl md:text-2xl font-semibold mb-2 text-[#e8d3b8]">Contact Page</h3>
                   <p className="text-gray-300">The contact page includes a user-friendly form with validation and seamless integration with email services for direct inquiries.</p>
                   <p className="text-gray-300">
                     <strong>Technologies:</strong> Used Formidable for form handling and Yup for validation.
@@ -95,7 +95,7 @@ const page = () => {
               </section>
 
               <section className="mb-8">
-                <h2 className="text-3xl font-semibold mb-4 text-[#d3bda5]">Technologies Used</h2>
+                <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-[#d3bda5]">Technologies Used</h2>
                 <ul className="list-disc list-inside text-gray-300">
                   <li>
                     <strong>Frontend:</strong> React.js, HTML, CSS, JavaScript
@@ -116,7 +116,7 @@ const page = () => {
               </section>
 
               <section className="mb-8">
-                <h2 className="text-3xl font-semibold mb-4 text-[#d3bda5]">Key Features</h2>
+                <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-[#d3bda5]">Key Features</h2>
                 <ul className="list-disc list-inside text-gray-300">
                   <li>
                     <strong>Advanced Animations:</strong> Leveraged GSAP for sophisticated animations, enhancing user engagement and visual appeal.
@@ -128,7 +128,7 @@ const page = () => {
               </section>
 
               <section className="mb-8">
-                <h2 className="text-3xl font-semibold mb-4 text-[#d3bda5]">Challenges and Solutions</h2>
+                <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-[#d3bda5]">Challenges and Solutions</h2>
                 <ul className="list-disc list-inside text-gray-300">
                   <li>
                     <strong>Server Performance:</strong> Effectively managed server load during peak traffic using Hostinger VPS, ensuring stability and optimal performance.
@@ -140,7 +140,7 @@ const page = () => {
               </section>
 
               <section>
-                <h2 className="text-3xl font-semibold mb-4 text-[#d3bda5]">Development Specs</h2>
+                <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-[#d3bda5]">Development Specs</h2>
                 <ul className="list-disc list-inside text-gray-300">
                   <li>
                     <strong>Frontend Framework:</strong> Next.js, React

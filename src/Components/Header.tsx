@@ -23,7 +23,7 @@ const Header = () => {
       {!scrolled && (
         <Link href={"/"}>
           <div className="flex items-center cursor-pointer ">
-            <Image src="/PMLOGO.webp" alt="" height="52" width="52" className="object-cover object-center " loading="lazy" style={{ height: "52px" }} />
+            <Image src="/PMLOGO.svg" alt="" height="52" width="52" className="object-cover object-center " loading="lazy" style={{ height: "52px" }} />
             <p className=" font-medium"> Prakash Meena</p>
           </div>
         </Link>
