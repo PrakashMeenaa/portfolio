@@ -32,7 +32,7 @@ const Circle: React.FC = () => {
   }, []);
 
   return (
-    <div id="magic-cursor">
+    <div id="magic-cursor" >
       <div id="ball" ref={ballRef}></div>
     </div>
   );

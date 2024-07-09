@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Header from "@/Components/Header";
-import Socials from "@/Components/Socials";
-import Circle from "@/Components/Circle";
+import dynamic from "next/dynamic";
+import Socialcircle from "@/Components/Socialcircle";
+const Title = dynamic(() => import('@/Components/Title'), { ssr: false });
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -25,9 +26,9 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body className={montserrat.className}>
       <Header/>
-       <Socials/>
-      <Circle/>
+       <Socialcircle/>
       {children}
+      <Title />
       </body>
     </html>
   );

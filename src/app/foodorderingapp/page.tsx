@@ -1,8 +1,13 @@
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { RiCloseLargeLine } from "react-icons/ri";
+
+export const metadata: Metadata = {
+  title:'Food Ordering App'
+}
 
 const page = () => {
   return (

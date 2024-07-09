@@ -1,9 +1,13 @@
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { RiCloseLargeLine } from "react-icons/ri";
 
+export const metadata: Metadata = {
+  title:'Oan Industries'
+}
 const page = () => {
   return (
     <div className="text-primary bg-gradient-to-b from-second to-[#796a63] flex flex-col lg:flex-row h-max justify-around items-center  px-10 pt-16">

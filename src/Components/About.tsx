@@ -39,7 +39,7 @@ const About = () => {
           <div className='bentobox items-center group' >
             <div className='h-[325px] w-[325px]'>
 
-            <Image src="/profile.webp" alt="photo" width="0" height="0" sizes="100vw" className=" h-[325px] w-[325px] filter grayscale group-hover:filter-none"></Image>
+            <Image src="/profile.webp" loading='lazy' unoptimized alt="photo" width="0" height="0" sizes="100vw" className=" h-[325px] w-[325px] filter grayscale group-hover:filter-none"></Image>
             </div>
             <p>Hi &#128075;,</p>
             <p> I am Prakash Meena</p>

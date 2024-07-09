@@ -5,7 +5,7 @@ import { FaLinkedin } from "react-icons/fa";
 
 const COLORS_TOP = ["#00ffd9", "#3f3072", "#CE84CF", "#DD335C"];
 
-export const Contact = () => {
+function Contact  () {
   const color = useMotionValue(COLORS_TOP[0]);
 
   useEffect(() => {
@@ -102,3 +102,4 @@ export const Contact = () => {
     </motion.section>
   );
 };
+export default Contact;
