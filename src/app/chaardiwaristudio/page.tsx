@@ -13,7 +13,7 @@ const page = () => {
   return (
     <div className="text-primary bg-gradient-to-b from-second to-[#796a63] flex flex-col lg:flex-row h-max justify-around items-center  px-10 pt-16">
       <div className="screen my-[1.5rem] ">
-        <Image src="/chaardiwaristudio/desktop.webp" alt="" width="0" height="0" sizes="100vw" className="w-full h-max xl:bottom-[-1300px]" />
+        <Image src="/chaardiwaristudio/desktop.webp" alt="" width="0" height="0" sizes="100vw" loading="eager" className="w-full h-max xl:bottom-[-1300px]" />
       </div>
       <div className=" h-max  w-screen flex flex-col gap-3 items-center mt-[1.5rem] ">
         <div className="flex items-center  bg-[#9d9d9d] w-max xl:scale-150 rounded-full   bg-opacity-65 p-1 ">

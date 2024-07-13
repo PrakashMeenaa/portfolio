@@ -30,7 +30,7 @@ export default function Home() {
         </div>
         <div className="ml-10 md:ml-48 mt-56 tracking-wide uppercase text-xl md:text-4xl w-max font-extrabold flex flex-col gap-3 absolute">
           <p>hey! I am </p>
-          <p className="text-2xl md:text-7xl font-extrabold p-0 m-0"> a Front-end</p>
+          <p className="text-2xl md:text-7xl font-extrabold p-0 m-0"> a Web</p>
           <p className="text-2xl md:text-7xl font-extrabold">developer</p>
           <p> crafting beautiful</p>
           <p>digital experiences.</p>

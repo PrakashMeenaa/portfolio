@@ -78,11 +78,11 @@ const Socials = () => {
   
 
   return (
-    <div className="flex flex-col text-primary fixed bottom-7 z-50 left-7 items-center">
+    <div className="flex md:flex-col bg-second left-0 right-0 md:right-auto md:bg-opacity-0 text-primary justify-around md:justify-normal fixed md:bottom-7 bottom-0 z-50 md:left-7  items-center">
       <div className="flex justify-center items-center">
         <div className="icon-wrap">
           <div className="button-icon">
-            <a href="/Resume/Prakash Meena Resume Frontend Developer.pdf" download="Prakash Meena Resume Frontend Developer.pdf" aria-label="CV download">
+            <a href="/Resume/Prakash Meena Resume.pdf" download="Full Stack web Developer Prakash Meena Resume.pdf" aria-label="CV download">
               <button className="buttons2" aria-label="CV">CV</button>
             </a>
           </div>

@@ -29,12 +29,12 @@ const About = () => {
   ];
   
   return (
-    <div id="about" className="text-primary w-screen h-max   my-24  px-3 sm:px-16 md:px-32 justify-around items-center">
+    <div id="about" className="text-primary w-screen h-max   my-24  px-3 sm:px-16 lg:px-32 justify-around items-center">
         <div className="text-[8vw] md:text-[5vw] uppercase font-semibold ">About me</div>
-        <div className='grid grid-cols-1 sm:grid-cols-2 gap-10 my-10'>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-10 my-10'>
         <div className="grid gap-10">
           <div className='bentobox'>
-              <p className='text-2xl'>Full Stack Developer with 5 years of experience, specializing in front-end development. Adept at creating seamless, user-friendly web applications with a keen eye for detail and visually compelling designs.</p>
+              <p className='text-2xl'>Full Stack web Developer with 2+ years of experience, specializing in front-end development. Adept at creating seamless, user-friendly web applications with a keen eye for detail and visually compelling designs.</p>
           </div>
           <div className='bentobox items-center group' >
             <div className='h-[325px] w-[325px]'>
@@ -50,22 +50,22 @@ const About = () => {
               <div className='flex  gap-10'>
                 <p className='text-[#787878] group-hover:text-primary w-32'>2022 - present</p>
                 <div>
-                   <p>Oan industries</p>
-                   <p className='text-[#787878] group-hover:text-primary'>Full stack developer</p>
+                   <p>Web Developer</p>
+                   <p className='text-[#787878] group-hover:text-primary'>Freelance</p>
                    </div>
               </div>
               <div className='flex  gap-10'>
-                <p className='text-[#787878] group-hover:text-primary w-32'>2020 - 2022</p>
+                <p className='text-[#787878] group-hover:text-primary w-32'>2022 - 2024</p>
                 <div>
-                   <p>RWS GROUP</p>
-                   <p className='text-[#787878] group-hover:text-primary'>Full stack developer</p>
+                   <p>AI Code Quality Analyst</p>
+                   <p className='text-[#787878] group-hover:text-primary'>RWS GROUP</p>
                    </div>
               </div>
               <div className='flex  gap-10'>
                 <p className='text-[#787878] group-hover:text-primary w-32'>2018 - 2022</p>
                 <div>
-                   <p>APPEN</p>
-                   <p className='text-[#787878] group-hover:text-primary'>Search Engine Evaluator</p>
+                   <p>Search Engine Evaluator</p>
+                   <p className='text-[#787878] group-hover:text-primary'>APPEN</p>
                    </div>
               </div>
           </div>
@@ -75,7 +75,7 @@ const About = () => {
             <h1>my background</h1>
             <p>My love for technology started early, even before I turned 13. I dedicated hours to exploring software, adjusting configurations, and honing my skills with Photoshop, HTML, and CSS. This passion led me to take Computer Science in 11th grade, where I discovered the vast and exciting world of programming.</p>
             <p>In college, this interest turned into a passion for creating new things. There&apos;s nothing quite like building something from scratch that not only impresses people but also solves real problems. This isn&apos;t just a job for me—it&apos;s what I want to do for the rest of my life.</p>
-            <p>Today, as a full stack developer who specializes in front-end development, I use my diverse skills to create web solutions that are both functional and engaging.</p>
+            <p>Today, as a Full Stack web developer who specializes in front-end development, I use my diverse skills to create web solutions that are both functional and engaging.</p>
             <p>My goal is to turn everyday digital experiences into something exceptional that people remember. I aim to deliver top-notch results that not only meet but exceed expectations, leaving a lasting impact.</p>
             </div>
           <div className='bentobox group '>

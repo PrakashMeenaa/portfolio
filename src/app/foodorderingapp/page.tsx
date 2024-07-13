@@ -12,8 +12,8 @@ export const metadata: Metadata = {
 const page = () => {
   return (
     <div className="text-primary bg-gradient-to-b from-second to-[#796a63] flex flex-col lg:flex-row h-max justify-around items-center  px-10 pt-16">
-      <div className="screen" style={{ marginTop: -150 }}>
-        <Image src="/foodorderingapp/desktop.webp" alt="" width="0" height="0" sizes="100vw" className="w-full h-max lg:bottom-[-720px]" />
+      <div className="screen my-[1.5rem]" >
+        <Image src="/foodorderingapp/desktop.webp" alt="" width="0" height="0" sizes="100vw" loading="eager" className="w-full h-max lg:bottom-[-720px]" />
       </div>
       <div className=" h-max  w-screen flex flex-col gap-3 items-center mt-[1.5rem] ">
         <div className="flex items-center  bg-[#9d9d9d] w-max xl:scale-[150%] rounded-full   bg-opacity-65 p-1 ">
@@ -38,20 +38,20 @@ const page = () => {
           </div>
         </div>
         <div className="bg-opacity-5 bg-primary shadow-lg scale-[90%] p-7 flex flex-col rounded-2xl gap-3">
-        <div className="max-w-4xl mx-auto px-4 py-8 text-white">
-    <h1 className="text-2xl md:text-5xl font-bold mb-4 text-center uppercase text-[#fffae6]">Food Ordering App</h1>
+          <div className="max-w-4xl mx-auto p-4 text-white">
+            <h1 className="text-2xl md:text-5xl font-bold mb-4 text-center uppercase text-[#fffae6]">Food Ordering App</h1>
     <hr className="border-gray-400 my-4"/>
 
     <div className="overflow-y-auto max-h-[550px]">
         <section className="mb-8">
-            <h2 className="text-3xl font-semibold mb-4 text-[#d3bda5]">Project Overview</h2>
+        <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-[#d3bda5]">Overview</h2>
             <p className="text-gray-300">
                 Developed as a sophisticated food ordering solution, the Food Ordering Web App offers users a seamless platform to explore, search, and order a variety of food items. This project emphasizes intuitive user interfaces, robust data management, and secure authentication methods to ensure a superior user experience.
             </p>
         </section>
 
         <section className="mb-8">
-            <h2 className="text-3xl font-semibold mb-4 text-[#d3bda5]">Key Pages</h2>
+        <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-[#d3bda5]">Important Pages</h2>
             
             <div className="mb-6">
                 <h3 className="text-xl md:text-2xl font-semibold mb-2 text-[#e8d3b8]">Home Page</h3>
@@ -97,7 +97,7 @@ const page = () => {
         </section>
 
         <section className="mb-8">
-            <h2 className="text-3xl font-semibold mb-4 text-[#d3bda5]">Technologies Utilized</h2>
+        <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-[#d3bda5]">Technologies Used</h2>
             <ul className="list-disc list-inside text-gray-300">
                 <li><strong>Frontend:</strong> Developed with React, Next.js, and styled using Tailwind CSS for responsive and modern UI.</li>
                 <li><strong>Backend:</strong> Built using Node.js, Express.js, MongoDB, and Mongoose for robust data management and server-side logic.</li>
@@ -116,7 +116,7 @@ const page = () => {
         </section>
 
         <section className="mb-8">
-            <h2 className="text-3xl font-semibold mb-4 text-[#d3bda5]">Development Details</h2>
+        <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-[#d3bda5]">Development Specs</h2>
             <ul className="list-disc list-inside text-gray-300">
                 <li><strong>Frontend:</strong> Utilized React and Next.js for dynamic frontend development, ensuring responsive design and efficient user interaction.</li>
                 <li><strong>Backend:</strong> Implemented with Node.js and Express.js, utilizing MongoDB and Mongoose for scalable data management and API development.</li>
