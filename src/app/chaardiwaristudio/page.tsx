@@ -25,10 +25,10 @@ const page = () => {
               <IoIosArrowForward className="m-1 p-1 text-3xl rounded-full  bg-[#888888]" />
             </Link>
           </div>
-          <a aria-label="website" href="https://chaardiwaristudio.com/" target="_blank" className="bg-[#9d9d9d] m-1 py-1 px-3 w-52 text-center rounded-full ">
-            chaardiwaristudio.com
+          <a aria-label="website" href="https://interior-designer-5kyq.vercel.app/" target="_blank" className="bg-[#9d9d9d] m-1 py-1 px-3 w-52 text-center rounded-full ">
+            chaardiwaristudio
           </a>
-          <a aria-label="website" href="https://chaardiwaristudio.com/" target="_blank" className="m-1 hidden sm:flex py-1 px-3 bg-[#9d9d9d] rounded-full ">
+          <a aria-label="website" href="https://interior-designer-5kyq.vercel.app/" target="_blank" className="m-1 hidden sm:flex py-1 px-3 bg-[#9d9d9d] rounded-full ">
             VISIT
           </a>
           <div className="bg-[#9d9d9d] rounded-full m-1 p-2 ">

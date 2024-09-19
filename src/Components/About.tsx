@@ -34,7 +34,7 @@ const About = () => {
         <div className='grid grid-cols-1 md:grid-cols-2 gap-10 my-10'>
         <div className="grid gap-10">
           <div className='bentobox'>
-              <p className='text-2xl'>Full Stack web Developer with 2+ years of experience, specializing in front-end development. Adept at creating seamless, user-friendly web applications with a keen eye for detail and visually compelling designs.</p>
+              <p className='text-2xl'>Full Stack web Developer with 3+ years of experience, specializing in front-end development. Adept at creating seamless, user-friendly web applications with a keen eye for detail and visually compelling designs.</p>
           </div>
           <div className='bentobox items-center group' >
             <div className='h-[325px] w-[325px]'>
@@ -51,18 +51,18 @@ const About = () => {
                 <p className='text-[#787878] group-hover:text-primary w-32'>2022 - present</p>
                 <div>
                    <p>Web Developer</p>
-                   <p className='text-[#787878] group-hover:text-primary'>Freelance</p>
+                   <p className='text-[#787878] group-hover:text-primary h-[24px]'></p>
                    </div>
               </div>
               <div className='flex  gap-10'>
-                <p className='text-[#787878] group-hover:text-primary w-32'>2022 - 2024</p>
+                <p className='text-[#787878] group-hover:text-primary min-w-32'>2022 - 2024</p>
                 <div>
                    <p>AI Code Quality Analyst</p>
                    <p className='text-[#787878] group-hover:text-primary'>RWS GROUP</p>
                    </div>
               </div>
               <div className='flex  gap-10'>
-                <p className='text-[#787878] group-hover:text-primary w-32'>2018 - 2022</p>
+                <p className='text-[#787878] group-hover:text-primary min-w-32'>2018 - 2022</p>
                 <div>
                    <p>Search Engine Evaluator</p>
                    <p className='text-[#787878] group-hover:text-primary'>APPEN</p>
@@ -81,17 +81,17 @@ const About = () => {
           <div className='bentobox group '>
             <h1>education</h1>
               <div className='flex  gap-10'>
-                <p className='text-[#787878] group-hover:text-primary w-32'>2019 - 2020</p>
+                <p className='text-[#787878] group-hover:text-primary min-w-28'>2019 - 2020</p>
                 <div>
                    <p>Simplilearn</p>
                    <p className='text-[#787878] group-hover:text-primary'>Full Stack Developer Bootcamp</p>
                    </div>
               </div>
               <div className='flex  gap-10'>
-                <p className='text-[#787878] group-hover:text-primary w-32'>2014 - 2018</p>
+                <p className='text-[#787878] group-hover:text-primary min-w-28'>2014 - 2018</p>
                 <div>
                    <p>JECRC UDML College of Engineering</p>
-                   <p className='text-[#787878] group-hover:text-primary'>B. Tech Computer Science</p>
+                   <p className='text-[#787878] group-hover:text-primary'>B.Tech in Engineering</p>
                    </div>
               </div>
           </div>
