@@ -91,7 +91,7 @@ const About = () => {
                 <p className='text-[#787878] group-hover:text-primary min-w-28'>2014 - 2018</p>
                 <div>
                    <p>JECRC UDML College of Engineering</p>
-                   <p className='text-[#787878] group-hover:text-primary'>B.Tech in Engineering</p>
+                   <p className='text-[#787878] group-hover:text-primary'>B.Tech</p>
                    </div>
               </div>
           </div>
