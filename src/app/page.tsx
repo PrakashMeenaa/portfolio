@@ -1,14 +1,15 @@
 "use client";
+import Spline from '@splinetool/react-spline';
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import { useEffect } from "react";
 
-const Spline = dynamic(() => import('@splinetool/react-spline'), {
-  ssr: false,
-  loading: () =><div>
-    <Image src={'/FallbackImage.webp'} loading='lazy' unoptimized alt="photo" width="0" height="0" sizes="100vw" className='h-screen w-screen'/>
-  </div>,
-});
+// const Spline = dynamic(() => import('@splinetool/react-spline'), {
+//   ssr: false,
+//   loading: () =><div>
+//     <Image src={'/FallbackImage.webp'} loading='lazy' unoptimized alt="photo" width="0" height="0" sizes="100vw" className='h-screen w-screen object-cover'/>
+//   </div>,
+// });
 
 const About = dynamic(() => import("@/Components/About"));
 const Contact = dynamic(() => import("@/Components/Contact"));

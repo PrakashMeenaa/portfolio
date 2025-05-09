@@ -5,7 +5,7 @@ import React, { useEffect } from 'react';
 
 const Spline = dynamic(() => import('@splinetool/react-spline'), {
   ssr: false,
-  loading: () => <p>...</p>,
+  loading: () => <p></p>,
 });
 
 const projects = [

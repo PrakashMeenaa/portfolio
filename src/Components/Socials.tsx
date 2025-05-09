@@ -82,7 +82,7 @@ const Socials = () => {
       <div className="flex justify-center items-center">
         <div className="icon-wrap">
           <div className="button-icon">
-            <a href="/Resume/Prakash Meena Resume.pdf" download="Full Stack web Developer Prakash Meena Resume.pdf" aria-label="CV download">
+            <a href="/Resume/Prakash Meena Resume.pdf" download="Senior web Developer Prakash Meena Resume.pdf" aria-label="CV download">
               <button className="buttons2" aria-label="CV">CV</button>
             </a>
           </div>
